@@ -69,20 +69,69 @@ nav>ul>li>a {
     margin-top: 32px;
 }
  
+
+/*  main*/
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 73px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.qi{
+    color: #727272;
+    font-weight: 500;
+}
+.of{
+    color: #131313;
+font-weight: 700;
+}
+.fea{
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    color: #727272;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.8rem;
+}
+
+
 /*responsive*/
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .teams-container{
         flex-direction: column;
     }
+    .teams-image-container{
+        grid-template-columns: 1fr;
+        border-image-width: auto;
+    }
+
 }
 @media screen and (min-width:576px) and (max-width:960px) {
     header{
         padding: 10px;
     }
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
         padding: 10px;
     }
